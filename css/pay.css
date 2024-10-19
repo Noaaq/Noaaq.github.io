@@ -1,0 +1,137 @@
+/*
+          _____                  _______                  _____                   _____                  _______         
+         /\    \                /::\    \                /\    \                 /\    \                /::\    \        
+        /::\____\              /::::\    \              /::\    \               /::\    \              /::::\    \       
+       /::::|   |             /::::::\    \            /::::\    \             /::::\    \            /::::::\    \      
+      /:::::|   |            /::::::::\    \          /::::::\    \           /::::::\    \          /::::::::\    \     
+     /::::::|   |           /:::/~~\:::\    \        /:::/\:::\    \         /:::/\:::\    \        /:::/~~\:::\    \    
+    /:::/|::|   |          /:::/    \:::\    \      /:::/__\:::\    \       /:::/__\:::\    \      /:::/    \:::\    \   
+   /:::/ |::|   |         /:::/    / \:::\    \    /::::\   \:::\    \     /::::\   \:::\    \    /:::/    / \:::\    \  
+  /:::/  |::|   | _____  /:::/____/   \:::\____\  /::::::\   \:::\    \   /::::::\   \:::\    \  /:::/____/   \:::\____\ 
+ /:::/   |::|   |/\    \|:::|    |     |:::|    |/:::/\:::\   \:::\    \ /:::/\:::\   \:::\    \|:::|    |     |:::|    |
+/:: /    |::|   /::\____|:::|____|     |:::|    /:::/  \:::\   \:::\____/:::/  \:::\   \:::\____|:::|____|     |:::|____|
+\::/    /|::|  /:::/    /\:::\    \   /:::/    /\::/    \:::\  /:::/    \::/    \:::\  /:::/    /\:::\   _\___/:::/    / 
+ \/____/ |::| /:::/    /  \:::\    \ /:::/    /  \/____/ \:::\/:::/    / \/____/ \:::\/:::/    /  \:::\ |::| /:::/    /  
+         |::|/:::/    /    \:::\    /:::/    /            \::::::/    /           \::::::/    /    \:::\|::|/:::/    /   
+         |::::::/    /      \:::\__/:::/    /              \::::/    /             \::::/    /      \::::::::::/    /    
+         |:::::/    /        \::::::::/    /               /:::/    /              /:::/    /        \::::::::/    /     
+         |::::/    /          \::::::/    /               /:::/    /              /:::/    /          \::::::/    /      
+         /:::/    /            \::::/    /               /:::/    /              /:::/    /            \::::/____/       
+        /:::/    /              \::/____/               /:::/    /              /:::/    /              |::|    |        
+        \::/    /                ~~                     \::/    /               \::/    /               |::|____|        
+         \/____/                                         \/____/                 \/____/                 ~~              
+                                                                                                                         
+                         ___    ___         ___  __   __        _  _    ___         _  _   ___  
+                        / __|  / __|  ___  | _ ) \ \ / /  ___  | \| |  / __|  ___  | \| | |   \ 
+                       | (__  | (__  |___| | _ \  \ V /  |___| | .` | | (__  |___| | .` | | |) |
+                        \___|  \___|       |___/   |_|         |_|\_|  \___|       |_|\_| |___/ 
+ */
+ *{
+    padding: 0;
+    margin: 0;
+}
+* hr{
+    color: #000000;
+}
+header {
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    height: 80px;
+    width: 100%;
+    /*position: fixed;*/
+    z-index: 10;
+}
+main{
+    background-color: #ffffff;
+}
+header h1{
+    color: #ffffff;
+    line-height: 80px;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+header ul{
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+    position: absolute;
+}
+header a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+footer{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: #ffffff;
+    line-height: 30px;
+    padding: 10px;
+    text-decoration: none;
+    flex-direction: column;
+    text-align: center;
+}
+#cc {
+    background-image: url("https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100px;
+    height: 35px;
+    background-size: contain;
+    border: none;
+}
+footer a{
+    color: rgba(255,255,255,0);
+}
+main{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+button{
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+}
+main a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+}
+a:hover{
+    text-decoration: underline;
+}
+main img{
+    height: 400px;
+    width: 400px;
+}
+div{
+    justify-content: center;
+}
+main {
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUp 2s ease forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

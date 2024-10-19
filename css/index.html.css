@@ -1,0 +1,252 @@
+/*
+          _____                  _______                  _____                   _____                  _______         
+         /\    \                /::\    \                /\    \                 /\    \                /::\    \        
+        /::\____\              /::::\    \              /::\    \               /::\    \              /::::\    \       
+       /::::|   |             /::::::\    \            /::::\    \             /::::\    \            /::::::\    \      
+      /:::::|   |            /::::::::\    \          /::::::\    \           /::::::\    \          /::::::::\    \     
+     /::::::|   |           /:::/~~\:::\    \        /:::/\:::\    \         /:::/\:::\    \        /:::/~~\:::\    \    
+    /:::/|::|   |          /:::/    \:::\    \      /:::/__\:::\    \       /:::/__\:::\    \      /:::/    \:::\    \   
+   /:::/ |::|   |         /:::/    / \:::\    \    /::::\   \:::\    \     /::::\   \:::\    \    /:::/    / \:::\    \  
+  /:::/  |::|   | _____  /:::/____/   \:::\____\  /::::::\   \:::\    \   /::::::\   \:::\    \  /:::/____/   \:::\____\ 
+ /:::/   |::|   |/\    \|:::|    |     |:::|    |/:::/\:::\   \:::\    \ /:::/\:::\   \:::\    \|:::|    |     |:::|    |
+/:: /    |::|   /::\____|:::|____|     |:::|    /:::/  \:::\   \:::\____/:::/  \:::\   \:::\____|:::|____|     |:::|____|
+\::/    /|::|  /:::/    /\:::\    \   /:::/    /\::/    \:::\  /:::/    \::/    \:::\  /:::/    /\:::\   _\___/:::/    / 
+ \/____/ |::| /:::/    /  \:::\    \ /:::/    /  \/____/ \:::\/:::/    / \/____/ \:::\/:::/    /  \:::\ |::| /:::/    /  
+         |::|/:::/    /    \:::\    /:::/    /            \::::::/    /           \::::::/    /    \:::\|::|/:::/    /   
+         |::::::/    /      \:::\__/:::/    /              \::::/    /             \::::/    /      \::::::::::/    /    
+         |:::::/    /        \::::::::/    /               /:::/    /              /:::/    /        \::::::::/    /     
+         |::::/    /          \::::::/    /               /:::/    /              /:::/    /          \::::::/    /      
+         /:::/    /            \::::/    /               /:::/    /              /:::/    /            \::::/____/       
+        /:::/    /              \::/____/               /:::/    /              /:::/    /              |::|    |        
+        \::/    /                ~~                     \::/    /               \::/    /               |::|____|        
+         \/____/                                         \/____/                 \/____/                 ~~              
+                                                                                                                         
+                         ___    ___         ___  __   __        _  _    ___         _  _   ___  
+                        / __|  / __|  ___  | _ ) \ \ / /  ___  | \| |  / __|  ___  | \| | |   \ 
+                       | (__  | (__  |___| | _ \  \ V /  |___| | .` | | (__  |___| | .` | | |) |
+                        \___|  \___|       |___/   |_|         |_|\_|  \___|       |_|\_| |___/ 
+ */
+*{
+    padding: 0;
+    margin: 0;
+}
+* hr{
+    color: #000000;
+}
+header {
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    height: 80px;
+    width: 100%;
+    /*position: fixed;*/
+    z-index: 10;
+}
+main{
+    background-color: #ffffff;
+}
+header h1{
+    color: #ffffff;
+    line-height: 80px;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+header ul{
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+    position: absolute;
+}
+header a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+.title {
+    background-image: url("../img/index/train.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    text-shadow: 2px 2px 4px black;
+}
+.title h2{
+    font-size: 100px;
+}
+.title p{
+    margin: 25px 0;
+}
+.block{
+    height: 20vh;
+    font-size: 5vh;
+    color: #231c1a;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+footer{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: #ffffff;
+    line-height: 30px;
+    padding: 10px;
+    text-decoration: none;
+    flex-direction: column;
+    text-align: center;
+}
+#cc {
+    background-image: url("https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100px;
+    height: 35px;
+    background-size: contain;
+    border: none;
+}
+footer a{
+    color: rgba(255,255,255,0);
+}
+.thingsT{
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+.things{
+    display: inline;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.things p{
+    font-size: medium;
+}
+.things img{
+    height: 200px;
+    width: 200px;
+}
+.things h3{
+    font-size: x-large;
+}
+.things div{
+    width: 30vw;
+}
+.title hr{
+    background-color: #ffffff;
+    border: none;
+    height: 2px;
+    width: 15vw;
+}
+.hr-t hr{
+    background-color: #ffffff;
+    border: none;
+    height: 2px;
+    width: 80vw;
+}
+.pay{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: #000000;
+    margin: 35px;
+    padding: 10px;
+}
+.pay img{
+    height: 300px;
+    width: 300px;
+}
+.co{
+    display: flex;
+    flex-direction: column;
+}
+.pay h2{
+    text-align: right;
+    color: #ffffff;
+}
+.pay p{
+    font-size: medium;
+    text-align: right;
+    color: #ffffff;
+    line-height: 25px;
+}
+.button p{
+    font-size: x-large;
+    margin: 4px;
+}
+.pay button{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 25px;
+}
+.button{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    margin: 20px;
+}
+.pay a{
+    text-decoration: none;
+    color: #000000;
+    font-size: medium;
+}
+.pay a:hover{
+    text-decoration: underline;
+}
+/*接下来是css动画部分*/
+main {
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUp 2s ease forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*这是动画延迟部分*/
+.title h2 {
+    animation-delay: 0.5s;  
+}
+.title hr{
+    animation-delay: 0.75s;
+}
+.title p {
+    animation-delay: 1s; 
+}
+.things img{
+    animation-delay: 2.5s;
+
+}
+.things p{
+    animation-delay: 2.5s;
+}
+.things h3{
+    animation-delay: 2.5s;
+}
+.block blockquote {
+    animation-delay: 1.5s; 
+}
+
+.thingsT h2 {
+    animation-delay: 2s;   
+}
